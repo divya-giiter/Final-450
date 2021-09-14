@@ -1,0 +1,40 @@
+//Reverse the array
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	    int n=7;
+        int a[n], temp=0, i=0;
+        for (int i = 0; i < n; i++) {
+            cin>>a[i];
+        }
+        for (int i = 0; i < n; i++) {
+            /* code */
+            cout<<a[i];
+            cout<<""  "";
+        }cout<<endl;
+        while(i<(n-i)){
+            temp=a[i];
+            a[i]=a[n-1-i];
+            a[n-1-i]=temp;
+            i++;
+        }
+        for (int i = 0; i < n; i++) {
+            /* code */
+            cout<<a[i];
+            cout<<""  "";
+        }cout<<endl;
+    return 0;
+}
+
+*/Time Complexity : O(n)
+Recursive Way :
+ 
+
+1) Initialize start and end indexes as start = 0, end = n-1 
+2) Swap arr[start] with arr[end] 
+3) Recursively call reverse for rest of the array.
+
+/*
